@@ -1,4 +1,4 @@
-.flex-boxContainer {
+.flexBox {
     display: flex;
     
 }
@@ -12,13 +12,14 @@ body {
 }
 
 #title {
+    
     display: flex;
     color: mediumslateblue;
     font-size: 50px;
     font-style: italic;
     justify-content: center;
     border: thick dashed rgb(184, 3, 3);
-    border-radius: 5em;
+    border-radius: 7em;
     border-style: double;
     
 }
@@ -27,11 +28,11 @@ body {
     justify-content: flex-end;
     margin-top: 1em;
     border-radius: 2em;
-    color:rgb(15, 15, 15);
+    color:rgb(10, 8, 8);
     font-size: 30px;
-    border: thick ridge black;
-    padding-left: 1em;
     
+    padding-left: 1em;
+    margin-left: 500px;
 }
 
 .tankCare {
@@ -39,14 +40,16 @@ body {
 }
 
 img {
+    border-radius: 4px;
     border: thick ridge black;
     border-color: rgb(15, 14, 14);
-    
+    padding: 5px;
+    width: 260px;
    
 }
 
 .c3 {
-    border: thin solid black;
+    font-size: small;
     display: flex;
     color: rgb(3, 3, 8);
     align-items: center;
@@ -66,14 +69,29 @@ img {
 
 }
 
-.locale {
+.locations {
     font-weight: bold;
-    color: black;
-    border: thin ridge black;
-    border-width: 2px;
-    margin-right: 808px;
-    border-top-color: cyan;
-    border-bottom-color: hotpink;
-    border-right-color: blueviolet;
-    border-left-color: yellow;
+    color: rgb(27, 11, 250);
+  font-size: large;
+  
+  
+}
+
+#locale {
+    color: rgb(255, 8, 201);
+}
+
+.navBar {
+    padding: 3px;
+    margin-left: 750px;
+    font-size: larger;
+}
+
+.FishList {
+    display: flex;
+    color: rgb(23, 45, 145);
+    font-style: oblique;
+    font-size: large;
+    margin-left: 100px;
+    margin-top: 35px;
 }

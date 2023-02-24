@@ -1,3 +1,4 @@
+
 /*
  *  To get you started, here's some properties of Bart.
  *  You need to add more properties to complete his
@@ -7,25 +8,35 @@
 const database = {
     fish: [
         {
-            type of fish: "Blue",
+            image: "https://www.pngmart.com/files/22/Magikarp-Pokemon-PNG-Pic.png",
+            species: "Blue",
             name: "Bart",
             food: "crustaceans",
-            size: 3,
+            length: 9,
             location:"Texas"
         },
         {
-            type of fish: "Red",
+            image: "https://www.pngmart.com/files/22/Magikarp-Pokemon-PNG-Isolated-Pic.png",
+            species: "Red",
             name: "Bernie",
             food: "philly cheesesteak",
-            size: 5,
+            length: 500,
             location: "Outside in water"
         },
         {
-            type of fish: "Pink",
+            image: "https://www.pngfind.com/pngs/m/305-3051312_shiny-magikarp-pokemon-lets-go-shiny-magikarp-transparent.png",
+            species: "Pink",
             name: "Boo",
             food: "hot dog",
-            size: 6,
+            length: 6,
             location: "wvu"
         }
     ]
+
+};
+
+export const getFish = () => {
+
+    return database.fish.map(copyOfSingleFishObject => ({...copyOfSingleFishObject}))
 }
+
